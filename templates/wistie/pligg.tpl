@@ -120,9 +120,10 @@
 		{/literal}
 		
 		{checkActionsTpl location="tpl_pligg_banner_top"}
-		
+
 		{include file=$tpl_header.".tpl"}
-		
+
+	
 <!-- START LEFT COLUMN -->
 	{if $pagename eq "submit"}
 		<div id="leftcol-superwide">
@@ -131,7 +132,9 @@
 	{else}
 		<div id="leftcol-wide">
 	{/if}
-		
+		<div id="sortbar">
+			{include file=$tpl_sort_bar.".tpl"}
+		</div>	
 		{if $pagename eq "group_story"}
 			<div id="group_navbar"></div>
 		{/if}
@@ -147,7 +150,8 @@
 {checkActionsTpl location="tpl_pligg_columns_start"}	
 	{if $pagename neq "story" && $pagename neq "submit" && $pagename neq "user" && $pagename neq "profile" && $pagename neq "login" && $pagename neq "register" && $pagename neq "edit"}
 <!-- START MIDDLE COLUMN -->
-		<div id="midcol">
+
+		<div id="midcol" style="border:1px solid black;">
 			{include file=$tpl_second_sidebar.".tpl"}
 		</div>
 <!-- END MIDDLE COLUMN -->

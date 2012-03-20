@@ -7,16 +7,9 @@
     {/if}
 	{checkActionsTpl location="tpl_pligg_login_link"}
 </div>
-
-<div id="logo"><a href="{$my_base_url}{$my_pligg_base}">{#PLIGG_Visual_Name#}</a></div>
-<script type="text/javascript">
-{if !isset($searchboxtext)}
-	{assign var=searchboxtext value=#PLIGG_Visual_Search_SearchDefaultText#}			
-{/if}
-var some_search='{$searchboxtext}';
-</script>
-
-<!-- START SEARCH -->
+<div>
+	<div id="logo" style="width:150px;float:left;"><a href="{$my_base_url}{$my_pligg_base}">{#PLIGG_Visual_Name#}</a>Left</div>
+	<div><!-- START SEARCH -->
 <div class="search">
 
 	<form action="{$my_pligg_base}/search.php" method="get" name="thisform-search" id="thisform-search" {if $urlmethod==2}onsubmit='document.location.href="{$my_base_url}{$my_pligg_base}/search/"+this.search.value.replace(/\//g,"|").replace(/\?/g,"%3F"); return false;'{/if}>
@@ -27,6 +20,15 @@ var some_search='{$searchboxtext}';
 </div>
 <div class="clear"></div>
 <!-- END SEARCH -->
+</div>
+</div>
+<script type="text/javascript">
+{if !isset($searchboxtext)}
+	{assign var=searchboxtext value=#PLIGG_Visual_Search_SearchDefaultText#}			
+{/if}
+var some_search='{$searchboxtext}';
+</script>
+
 
 <!-- START NAVBAR -->
 <ul id="nav">

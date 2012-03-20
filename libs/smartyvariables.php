@@ -75,6 +75,7 @@ $main_smarty->assign('tpl_right_sidebar', $the_template . '/sidebar');
 $main_smarty->assign('tpl_second_sidebar', $the_template . '/sidebar2');
 $main_smarty->assign('tpl_header', $the_template . '/header');
 $main_smarty->assign('tpl_footer', $the_template . '/footer');
+$main_smarty->assign('tpl_sort_bar', $the_template . '/story_sort_bar');
 
 // Admin Template
 $main_smarty->assign('tpl_header_admin', '/header');

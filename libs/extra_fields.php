@@ -4,8 +4,8 @@ if(!defined('mnminclude')){header('Location: ../404error.php');die();}
 
 //Extra fields
 
-define('Enable_Extra_Field_1', false);
-	define('Field_1_Title', 'misc field');
+define('Enable_Extra_Field_1', true);
+	define('Field_1_Title', 'Price 1');
 	define('Field_1_Instructions', 'this is where you put the instructions for this new field.');
 	define('Field_1_Searchable', false); 
 	//the variables below are not yet used in version 6.02.
@@ -13,8 +13,8 @@ define('Enable_Extra_Field_1', false);
 	define('Field_1_Validation_Method', '');
 	define('Field_1_Validation_Error_Message', '');
 
-define('Enable_Extra_Field_2', false);
-	define('Field_2_Title', 'misc field2');
+define('Enable_Extra_Field_2', true);
+	define('Field_2_Title', 'Price 2');
 	define('Field_2_Instructions', 'this is where you put the instructions for this new field.');
 	define('Field_2_Searchable', false); 
 	//the variables below are not yet used in version 6.02.

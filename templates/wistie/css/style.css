@@ -6,7 +6,10 @@ margin: 0px;
 font-family: Geneva, Arial, Helvetica, sans-serif;
 font-size: 12px;
 color: #707070;
+padding:0px;
 }
+
+div {margin:0; padding:0;}
 
 ul {margin:0; padding:0;}
 ol {margin:0; padding:0;}
@@ -133,10 +136,13 @@ background:#EDEDED;
 .leftwrapper {padding-left:12px;}
 
 #leftcol {
-width: 550px;
+width: 690px;
 float: left;
 overflow: hidden;
+display:inline;
+border:1px solid red;
 }
+
 
 #leftcol ol, #leftcol ul {
 margin-left:20px;
@@ -144,7 +150,7 @@ margin-top:5px;
 }
 
 #leftcol-wide {
-width: 790px;
+width: 630px;
 float: left;
 overflow: hidden;
 }
@@ -153,9 +159,53 @@ width: 960px;
 float: left;
 overflow: hidden;
 }
+
+#sortbar{
+width: 690px;
+border: 1px red solid;
+display:block;
+}
+
+#sortbar ul {
+	display:inline;
+}
+
+/* Sort list Sort Bar*/
+#navcontainer_sortbar {
+padding:10px 10px 10px 5px;
+}
+
+#navcontainer_sortbar ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font-size: 11px;
+}
+
+#navcontainer_sortbar li { margin: 0 0 0 0;
+display:inline-block;
+}
+
+#navcontainer_sortbar a
+{
+display: inline;
+padding-left: 18px;
+width: 160px;
+background-image: url(../images/l1_down.gif);
+}
+
+#navcontainer_sortbar a:link, #navlist a:visited
+{
+color: #707070;
+text-decoration: none;
+}
+
 .stories {
-width: 550px;
-margin-bottom: 30px;
+width: 160px;
+margin-bottom: 15px;
+border: 1px red solid;
+display:block;
 }
 .stories-wide {
 width: 790px;
@@ -179,7 +229,7 @@ padding: 10px;
 }
 
 .title h2 {
-font-size: 14px;
+font-size: 11px;
 color: #11a3ac;
 margin: 0px;
 font-weight: bold;
@@ -219,13 +269,13 @@ margin: 0px;
 font-weight:bold;
 }
 .title {
-margin-left: 46px;
+/*margin-left: 46px;*/
 }
 
 .adminlinks {font-size:11px;}
 
 .storycontent {
-padding: 10px;
+padding: 4px;
 font-size:12px;
 }
 .storycontent p {
@@ -438,7 +488,7 @@ float:right;
 
 /* MIDDLE COLUMN */
 #midcol {
-width: 220px;
+width: 245px;
 margin-left: 20px;
 float: left;
 /* a trick to hide of long comments that don't have spaces */
@@ -480,9 +530,11 @@ color: #11a3ac;
 
 /* RIGHT COLUMN */
 #rightcol {
-width: 150px;
+width: 245px;
 margin-left: 20px;
-float: left;
+/*float: left;*/
+float:right;
+border:1px green solid;
 }
 #aboutcontent {
 padding: 10px 10px 20px 10px;
